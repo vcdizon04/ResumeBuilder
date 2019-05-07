@@ -1,0 +1,1417 @@
+JOB_ID,JOB_VALUE
+2,Accounting Clerk
+3,Administrative Assistant
+4,Administrative Coordinator
+5,Administrative Director
+6,Administrative Manager
+9,Administrative Specialist
+11,Administrative Support Supervisor
+12,Administrator
+13,Assistant Director
+16,Billing Clerk
+17,Billing Coordinator
+18,Bookkeeper
+19,Bookseller
+20,Bookkeeping Assistant
+21,Bookkeeping
+22,Book Keeper
+23,Book Seller
+24,Booking Agent
+25,Booking Officer
+26,Bookkeeping Supervisor
+27,Assistant Bookkeeper
+28,Accounting Bookkeeper
+29,Senior Bookkeeper
+30,Contract Bookkeeper
+31,Full Charge Bookkeeper
+32,Accountant Assistant
+33,Accountant General
+34,Accountant Intern
+35,Senior Accountant
+36,Staff Accountant
+37,Assistant Accountant
+38,Junior Accountant
+39,Financial Accountant
+40,General Accountant
+42,General Office Clerk
+43,Human Resources Administrator
+44,Information Clerk
+45,Legal Secretary
+46,Mail Clerk
+49,Medical Secretary
+50,Office Assistant
+51,Office Clerk
+52,Office Manager
+56,Program Manager
+57,Receptionist
+59,Secretary
+60,Senior Administrative Specialist
+61,Senior Administrative Coordinator
+62,Senior Administrative Secretary
+64,Senior Executive Assistant
+68,Special Events Manager
+69,Special Projects Coordinator
+73,Typist
+76,Word Processor
+78,Bankruptcy Specialist
+80,Assistant Branch Manager
+82,Audit Manager
+84,Foreclosure Specialist
+85,Bilingual Customer Service Rep
+86,Branch Manager
+87,Senior Loan Processor
+88,Business Banking Officer
+89,Business Intelligence Developer
+90,Client Service Manager
+91,Collector
+93,Fund Accountant
+95,Finance Assistant
+96,Loan Processor
+97,Consumer Loan Underwriter
+98,Custody Investment Specialist
+99,Customer Service Representative
+103,Head Teller
+104,Internal Auditor
+105,Accounting Analyst
+106,Sales Operations Analyst
+107,Inventory Management Specialist
+108,Investment Advisor Representative
+109,Junior Analyst
+111,Senior Business Consultant
+112,Lending Manager
+113,Senior Loan Officer
+114,Loan Officer Assistant
+115,Consumer Loan Specialist
+116,Locksmith
+117,Loss Prevention Manager
+118,Mortgage Consultant
+119,Support Technician
+120,Accounts Executive
+121,Customer Service Representative
+122,Commercial Loan Officer
+123,Personal Banker
+124,Phone Banker
+125,Consumer Banker
+126,Compliance Analyst
+127,Customer Relationship Manager
+128,Senior Financial Analyst
+129,Investment Analyst
+130,Senior Teller
+131,Senior Consultant
+132,Technology Consultant
+133,Teller
+134,Asset Protection Manager
+135,Asset Protection Associate
+136,Wireless Sales Associate
+137,Environmental Consultant
+138,Environmental Officer
+139,Environmental Engineer
+140,Environmental Scientist
+141,Environmental Aide
+142,Economic Support Specialist
+143,Financial Consultant
+144,Foreclosure Specialist
+145,Fundraising Coordinator
+147,Compensation Analyst
+148,Health Care Assistant
+150,Leasing Consultant
+151,Healthcare Specialist
+152,Healthcare Consultant
+153,Healthcare Consultant
+154,Market Research Analyst
+155,Human Resources Manager
+156,Human Resources Consultant
+157,Recruitment Consultant
+158,Senior Recruitment Consultant
+159,Employee Relations Manager
+160,Software Developer
+2269,Web Developer
+162,Java Developer
+163,Sap Solution Manager Consultant
+164,Android Developer
+165,Senior Developer
+166,Application Developer
+167,Software Developer Intern
+168,Website Developer
+169,Senior Business Consultant
+170,Management Consultant
+171,Principal Consultant 
+172,Sales Consultant
+173,Senior Consultant
+174,Project Manager
+175,Senior Consultant
+176,Advertising Sales Manager
+177,Advertising Sales Representative
+178,Associate
+179,Brand Manager
+180,Commercial Property Manager
+181,Customer Service Supervisor
+182,Lawyer
+183,Legal Consultant
+184,Legal Nurse Consultant
+185,Marketing Consultant
+186,Data Analyst
+187,Retail Sales Consultant
+188,Safety Consultant
+189,Senior Sales Consultant
+190,Electrical Engineering Technician
+191,Tax Accountant
+192,Lactation Consultant
+193,Life Coach
+194,Wedding Planner
+195,Weighmaster
+196,Research Assistant
+197,Business Analyst
+198,Associate Consultant
+199,Creative Designer
+200,Educational Consultant
+201,Associate Governmental Program Analyst
+202,Implementation Consultant
+203,International Account Manager
+204,Lead Coordinator
+205,Project Management Consultant
+206,Leadership Development Coordinator
+207,Strategic Marketing Consultant
+209,Chief Audit Executive
+210,Chief Architect
+211,Chief Marketing Officer
+212,Chief Engineer
+215,CEO (Chief Executive Officer)
+217,CFO (Chief Financial Officer)
+218,Chief Inspector
+219,CIO (Chief Information Officer)
+222,CMO (Chief Marketing Officer)
+223,Chief Pilot
+226,Chief Technology Officer
+228,Chief Operating Officer
+229,Chief Operations Officer
+231,Human Resources Officer
+234,Cash Applications Specialist
+235,Assistant Director
+237,Human Resource Assistant
+238,Assistant Human Resources Manager
+239,Assistant Vice President
+240,Associate Director of Human Resources
+241,Attorney
+242,Benefits Administrator
+243,Work Center Supervisor
+244,Health Benefits Coordinator
+245,Benefits Counselor
+246,Benefits Specialist
+247,Benefits Administrator
+248,Category Manager
+251,People Greeter
+253,Compensation Analyst
+254,Contract Administrator
+255,Administrative Supervisor
+256,Talent Acquisition Coordinator
+262,Regional Human Resources Manager
+270,Care Service Employee
+271,Employment Supervisor
+272,Employee Training Coordinator
+273,Warehouse Employee
+274,Employee Benefits Consultant
+277,Employee Relations Manager
+281,Employment Specialist
+282,Executive Recruiter
+283,Functional Consultant
+284,HR Administrative Assistant
+285,Human Resources Generalist
+286,Human Resources Intern
+289,Human Resources Administrator
+290,Human Resources Assistant
+294,Human Resources Assistant
+296,Human Resources Business Partner
+298,Human Resources Clerk
+310,Human Resources Director
+311,Human Resources Generalist
+313,Human Resources Manager
+315,Human Resources Officer
+317,Human Resources Representative
+318,Human Resources Specialist
+322,Program Manager
+323,Information Systems Security Manager
+324,Employee Relations Manager
+332,Payroll Processor
+333,Plant Manager
+334,Recruiter
+335,Recruiting Coordinator
+336,Recruitment Executive
+337,Recruiting Manager
+339,Social Media Coordinator
+341,Recruitment Specialist
+342,Safety Coordinator
+346,Senior HR Specialist
+347,Social Media Manager
+348,Staffing Consultant
+349,Staffing Coordinator
+350,Talent Acquisition Consultant
+351,Talent Acquisition Manager
+352,Technical Recruiter
+353,Trainer
+354,Training Assistant
+355,Training Coordinator
+364,Actuarial Analyst
+365,Actuarial Intern
+367,Actuary
+368,Clerk
+369,Administrative Assistant
+370,Bookkeeper
+371,Policy Advisor
+372,Adjuster
+373,Claims Adjuster
+374,Claims Analyst
+375,Claims Examiner
+376,Claims Manager
+377,Claims Representative
+378,Claims Specialist
+380,Customer Service Associate
+381,Customer Service Representative
+382,Customer Service Manager
+383,Director
+384,Division Manager
+386,Marketing Manager
+387,Office Manager
+388,Project Manager
+390,Training Manager
+391,Account Executive
+392,Account Manager
+394,Sales Agent
+395,Sales Manager
+396,Underwriter
+397,Assistant Underwriter
+398,Quality Control Specialist
+400,Consultant
+401,Analyst
+402,Appraiser
+403,Auditor
+404,Broker
+405,Business Analyst
+406,Estimator
+407,Examiner
+408,Field Service Technician
+409,Field Operations Manager
+410,Insurance Adjuster
+411,Insurance Agent
+412,Investigator
+413,Arbitrator
+414,Attorney
+415,Case Manager
+417,Corporate Lawyer
+418,Legal Assistant
+419,Legal Counsel
+420,Paralegal
+424,Document Controller
+425,File Clerk
+426,Legal Aide/Assistant
+427,Legal Secretary
+428,Mail Room Clerk
+430,Bailiff
+431,Court Appointed Special Advocate
+432,Freelance Court Reporter
+433,Court Reporter
+436,Judge
+439,Magistrate
+441,Contract Administrator
+442,Contract Attorney
+443,Contract Specialist
+446,Account Resolution Specialist
+448,Regulatory Affairs Associate
+450,Software Consultant
+451,Brand Ambassador
+453,Associate Content Analyst
+454,Content Creator
+455,Copy Writer
+458,Editor
+459,Executive Assistant
+460,Event Coordinator
+461,Event Manager
+463,Manager Projects
+464,Social Media Director
+465,Managing Director
+466,Media Director
+467,Social Media Coordinator
+468,Program Coordinator
+472,Public Information Officer
+474,Public Relations Coordinator
+476,Public Relations Officer
+478,Publicist
+479,Relationship Manager
+483,Technical Writer
+484,Account Director
+487,Account Supervisor
+489,Senior Account Executive
+490,Communications Coordinator
+491,Communications Director
+492,Communications Consultant
+493,Communications Technician
+494,Communications Specialist
+501,Marketing Communications Manager
+502,Marketing Communications Specialist
+503,Development Director
+504,Development Officer
+507,Fundraising Coordinator
+509,Marketing Associate
+510,Marketing Communications Specialist
+511,Marketing Communications Manager
+512,Marketing Coordinator
+513,Marketing Director
+514,Marketing Officer
+515,Social Media Marketing Coordinator
+517,Communications Manager
+519,Media Director
+522,Social Media Specialist
+523,Procurement Specialist
+524,Associate Buyer
+526,Buyer
+545,Contracts Administrator
+557,Expeditor
+567,Inventory Associate
+569,Lead Sales Associate
+570,Lead Cashier
+571,Lead Server
+572,Lead Technician
+573,Lead Preschool Teacher
+574,Lead Line Cook
+575,Merchant Teller
+576,Pricing Analyst
+577,Principal Software Engineer
+578,Principal Architect
+579,Procurement Agent
+580,Senior Procurement Specialist
+581,Procurement Engineer
+582,Procurement Assistant
+590,Procurement Specialist
+591,Project Superintendent
+596,Purchaser
+597,Purchasing Agent
+598,Purchasing Coordinator
+599,Purchasing Clerk
+600,Purchasing Assistant
+601,Purchasing Manager
+603,Relationship Manager
+604,Replenishment Associate
+605,Research Officer
+606,Resource Teacher
+614,Senior Buyer
+616,Senior Purchasing Agent
+617,Service Delivery Manager
+622,Sourcing Specialist
+623,Special Procedures Technologist
+624,Strategic Marketing Consultant
+631,Supply Chain Manager
+632,Supply Specialist
+633,Supply Manager
+634,Unit Supply Specialist
+635,Supply Clerk
+636,Supply Sergeant
+639,Account Representative
+640,Advertising Sales Representative
+641,Area Sales Manager
+644,Brand Ambassador
+645,Business Development Manager
+646,Business Development Representative
+649,Customer Care Representative
+651,Direct Sales Representative
+655,Distribution Specialist
+656,District Sales Manager
+657,Enterprise Architect
+658,Enterprise Account Executive
+661,Financial Advisor
+665,Franchisee
+666,Healthcare Assistant
+667,Healthcare Specialist
+668,Healthcare Consultant
+669,Professional Healthcare Representative
+670,Industrial Engineer
+671,Inside Sales Manager
+672,Inside Sales Agent
+673,Insurance Sales Representative
+674,Investments Representative
+675,Key Account Manager
+676,Command Sergeant Major
+677,Business Development Manager
+679,Medical Sales Representative
+680,National Accounts Sales Representative
+683,National Sales Manager
+684,Outside Sales Representative
+685,Regional Human Resources Manager
+686,Western Regional Sales Manager
+687,Regional Sales Director
+688,Regional Sales Manager
+689,Retail Sales Representative
+690,Retail Store Manager
+691,Route Sales Representative
+694,Sales Assistant
+695,Sales Associate
+696,Sales Coordinator
+697,Sales Director
+699,Sales Operations Manager
+700,Sales Representative
+702,Sales Trainee
+703,Salesperson
+706,Territory Account Manager
+707,Territory Manager
+708,Territory Sales Manager
+709,Territory Sales
+710,Wealth Advisor
+711,Internal Wholesaler
+714,Animator
+715,Apparel Clerk
+717,Art Director
+720,Assistant Sales Manager
+721,Assistant Store Director
+722,Assistant Stylist
+723,Associate Designer
+729,Client Services Manager
+732,Creative Director
+735,Department Manager
+736,Design Assistant
+738,Designer
+746,Editor
+747,Editorial Intern
+749,Factory Hand
+750,Factory Worker
+751,Fashion Consultant
+752,Fashion Director
+753,General Manager
+754,Graphic Artist
+755,Graphic Designer
+756,Production Artist
+757,Human Resource Manager
+758,Illustrator
+759,Import Coordinator
+762,Jewelry Consultant
+763,Journalist
+765,Logistics Manager
+766,Logistics Assistant
+768,Manufacturer
+769,Market Researcher
+771,Marketing Manager
+772,Media Planner
+773,Merchandise Coordinator
+774,Merchandise Processor
+775,Merchandiser
+776,Merchandising Assistant
+777,Model
+779,Operations Manager
+780,Pattern Maker
+781,Personal Shopper
+782,Photo Editor
+783,Photographer
+785,Financial Planning Assistant
+786,Product Developer
+787,Product Development Manager
+788,Product Planner
+789,Production Assistant
+790,Production Coordinator
+792,Public Relations Coordinator
+795,Residential Real Estate Appraiser
+797,Development Manager
+801,Retail Salesperson
+804,Sales Development Representative
+810,Senior Merchandise Manager
+811,Senior Sales Associate
+812,Showroom Assistant
+813,Showroom Manager
+816,Store Director
+817,Store Manager
+819,Studio Manager
+821,Stylist
+822,Technical Designer
+826,Window Washer
+828,Content Writer
+829,Digital Marketing Intern
+830,Digital Marketing Manager
+831,Digital Marketing Consultant
+851,Product Marketing Manager
+853,Vice President Marketing
+858,Business Development Representative
+859,Communications Assistant
+862,Marketing Communications Manager
+863,Marketing Communications Specialist
+866,Media Sales Consultant
+868,Public Relations
+869,Public Relations Coordinator
+870,Public Relations Intern
+878,Market Research Interviewer
+879,Marketing Analyst
+881,Account Coordinator
+886,Regional Account Manager
+894,Senior Sales Representative
+897,Advertising Director
+901,Creative Director
+902,Media Buyer
+904,Media Director
+908,Promotions Director
+909,Promotional Model
+912,Marketing Specialist
+915,Blogger
+918,Community Manager
+922,Digital Content Producer
+926,Community Director
+935,Customer Engagement Leader
+936,Engagement Manager
+942,Manager Digital and Social Media
+944,Multimedia Designer
+945,Multimedia Journalist
+946,Social Media Intern
+948,Social Media Assistant
+954,Social Media Marketing Consultant
+960,Advertising Account Manager
+965,Assistant Administrator
+966,Assistant Customer Service Manager
+967,Bellman
+968,Benefit Counselor
+969,Bilingual Customer Service Rep
+971,Call Center Customer Service Rep
+972,Call Center Team Lead
+973,Call Center Representative
+974,Call Center Supervisor
+975,Cashier
+980,Client Relations Specialist
+981,Client Service Coordinator
+982,Client Service Representative
+983,Client Service Specialist
+984,Client Success Manager
+985,Computer Support Specialist
+986,Concierge
+988,Contact Center Representative
+989,Custodial Maintenance
+991,Customer Care Associate
+992,Customer Care Coordinator
+993,Customer Care Executive
+996,Customer Care Manager
+997,Customer Care Supervisor
+1001,Customer Relations Specialist
+1002,Customer Service Agent
+1005,Customer Service Associate
+1006,Customer Service Rep
+1008,Customer Service Lead
+1010,Customer Service Professional
+1012,Customer Service Specialist
+1013,Customer Service Supervisor
+1014,Customer Service Technical Support
+1018,Customer Support Associate
+1019,Customer Support Manager
+1021,Client Support Specialist
+1025,Dispatcher
+1026,Duty Manager
+1027,Flight Attendant
+1028,Field Service Technician
+1029,Front Desk Agent
+1030,Front Desk Associate
+1031,Front Desk Coordinator
+1033,Front Desk Receptionist
+1034,Garage Door Installer
+1035,Guest Service Agent
+1036,Guest Service Representative
+1038,Help Desk Supervisor
+1039,Help Desk Support
+1041,Hostess
+1042,Inside Salesperson
+1043,Restaurant Hostess
+1044,Management Specialist
+1048,Outbound Sales
+1049,Patient Care Coordinator
+1051,Rental Representative
+1053,Retail Associate
+1054,Retail Sales Associate
+1057,Server
+1058,Customer Service Administrator
+1059,Service Advisor
+1060,Service Consultant
+1061,Software Testing Engineer
+1062,Special Education Instructional Assistant
+1063,Provider Enrollment Specialist
+1065,Technical Support Representatives
+1067,Telephone Sales Rep
+1068,Territory Service Representative
+1069,Transaction Coordinator
+1070,Wheeled Vehicle Mechanic
+1071,Casino Dealer
+1074,Front Desk Supervisor
+1075,Front Office Assistant
+1078,Guest Relations Manager
+1079,Guest Services Associate
+1080,Guest Services Supervisor
+1081,Hotel Manager
+1083,Reservation Agent
+1084,Reservations Coordinator
+1085,Events Manager
+1095,Cafeteria Manager
+1096,Catering Manager
+1097,Chef
+1098,Cook
+1100,Kitchen Manager
+1101,Pastry Chef
+1102,Restaurant Manager
+1103,Sous Chef
+1104,Hotel General Manager
+1105,Back Office Assistant
+1106,Catering Sales Manager
+1114,Shift Leader
+1115,Shift Manager
+1117,Wedding Photographer
+1119,Maintenance Director
+1120,Operations Director
+1121,Executive Housekeeper
+1122,Housekeeper
+1123,Housekeeping Coordinator
+1124,Housekeeping Supervisor
+1125,Assistant Head Housekeeper
+1126,Maid
+1127,Maintenance Supervisor
+1128,Maintenance Worker
+1130,Bell Ringer
+1131,Bellboy
+1132,Bellman
+1133,Driver
+1134,Parking Lot Attendant
+1135,Valet
+1136,Valet Attendant
+1137,Valet Driver
+1138,Back Waiter
+1139,Banquet Server
+1140,Barback
+1141,Barista
+1142,Bartender
+1143,Busser
+1145,Catering Assistant
+1146,Food Runner
+1147,Food Server
+1148,Head Waiter
+1149,Host
+1153,Sommelier
+1156,Real Estate Appraiser
+1158,Agent
+1159,Assistant Broker
+1160,Associate Broker
+1163,Closing Coordinator
+1167,Real Estate Agent
+1170,Real Estate Consultant
+1176,Loan Servicing Specialist
+1177,Loan Originator
+1179,Loan Underwriter
+1180,Retail Merchandiser
+1181,Mortgage Advisor
+1190,Home Care Aide
+1192,Building Inspector
+1193,Real Estate Professional
+1195,Title Examiner
+1197,Apprentice Bartender
+1199,Assistant Chef
+1203,Baker
+1207,Bar Manager
+1210,Bus Person
+1214,Chef Manager
+1218,Culinary Arts Instructor
+1219,Culinary Specialist
+1220,Culinary Professional
+1222,Dining Room Manager
+1224,Dishwasher
+1225,District Manager
+1227,Executive Chef
+1229,Field Representative
+1230,Fine Dining Server
+1233,Grill Cook
+1237,Inventory Analyst
+1239,Kitchen Worker
+1240,Lead Cook
+1241,Line Cook
+1244,Operations Analyst
+1246,Prep Cook
+1248,Regional Business Manager
+1249,Regional Operations Manager
+1250,Regional Manager
+1251,Regional Director
+1252,Restaurant General Manager
+1255,Night Shift Supervisor
+1257,Steward
+1258,Automotive Service Technician Apprentice
+1259,Automotive Service Technician
+1262,Customer Service Assistant
+1266,Order Entry Clerk
+1267,Order Filler
+1268,Order Picker
+1269,Painting Contractor
+1270,Product Demonstrator
+1272,Retail Store Supervisor
+1279,Stock Clerk
+1280,Stock Associate
+1284,Department Manager
+1285,Sales Floor Associate
+1286,Floorhand
+1287,Floor Manager
+1288,Promotions Coordinator
+1290,Retail Management
+1292,Retail Team Member
+1293,Service Supervisor
+1296,Area Manager
+1297,Merchandise Manager
+1298,Assistant Store Manager
+1299,Interim Product Manager
+1300,Automotive Service Consultant
+1315,Assistant Professor
+1322,Produce Merchandiser
+1323,Retail Sales Merchandiser
+1324,Driver Merchandiser
+1328,Footwear Associate
+1329,Inventory Auditor
+1330,Loss Prevention Specialist
+1331,Merchandise Handler
+1332,Merchandise Associate
+1334,Merchandise Team Manager
+1335,Zone Merchandise Supervisor
+1338,Visual Merchandiser
+1340,Admissions Representative
+1343,Associate Producer, Events
+1344,Athletic Recruiter
+1345,Certified Athletic Trainer
+1346,Bike Tour Guide
+1347,Bus Driver
+1348,Cabin Crew
+1349,Cabinet Installer
+1350,Civil Engineer
+1351,Commercial Sales Manager
+1352,Conference Coordinator
+1355,Corporate Recruiter
+1359,Second Grade Student Teacher
+1363,Field Crew Manager
+1364,Field Service Engineer
+1365,First Officer
+1370,Geologist
+1371,Global Program Manager
+1372,Group Exercise Instructor
+1373,Assistant Group Supervisor
+1374,Guest Services Agent
+1376,International Flight Attendant
+1377,International Travel Consultant
+1380,Interpreter
+1381,Investment Advisor Representative
+1383,Lead Preschool Teacher
+1384,Location Manager
+1388,Photojournalist
+1389,Assistant Producer
+1390,Travel Specialist
+1391,Set Production Assistant
+1392,Assistant Program Coordinator
+1398,Technical Trainer
+1399,Territory Representative
+1400,Tourism Manager
+1401,Tour Guide
+1406,Train Conductor
+1407,Travel Agent
+1409,Travel Manager
+1411,Travel Registered Nurse
+1416,Apprentice
+1417,Carpenter
+1418,Carpenters Apprentice
+1419,Drywall Mechanic
+1420,Drywall Finisher
+1421,Plasterer
+1423,Laborer
+1424,General Laborer
+1425,Painter
+1426,Construction Worker
+1430,Journeyman Electrician
+1431,Master Electrician
+1436,Civil Engineer
+1438,Surveyor
+1439,Field Engineer
+1441,Planner
+1442,Construction Engineer
+1443,Crane Operator
+1445,Equipment Operator
+1446,Heavy Equipment Operator
+1447,Roofer
+1451,Concrete Laborers
+1453,Master Plumber
+1454,Plumber
+1455,Boilermaker
+1456,Pipe Fitter
+1457,Purchasing Coordinator
+1458,Project Assistant
+1460,Safety Director
+1461,Safety Manager
+1462,Scheduler
+1463,Site Manager
+1464,Construction Assistant
+1465,Construction Coordinator
+1466,Construction Foreman
+1467,Construction Manager
+1468,Construction Superintendent
+1469,Construction Supervisor
+1470,Contract Administrator
+1472,Estimator
+1474,Iron Worker
+1475,Brazer
+1476,Bricklayer
+1477,Carpenter
+1478,Concrete Finisher
+1479,Cutter
+1480,Electric/Electronics Technician
+1483,Electric Motor Assembler
+1484,Electrical Powerline Installer/Repairer
+1487,Grinder
+1490,Lineman
+1491,Locksmith
+1492,Mason
+1493,Mechanic
+1494,Millwright
+1495,Painter
+1496,Pest Control Technician
+1497,Pipefitter
+1506,Steamfitter
+1509,Welder
+1512,General Maintenance Worker
+1515,Groundskeeper
+1517,Handyman
+1520,Landscaper
+1531,Custodian
+1536,Janitor
+1537,Laundry Attendant
+1539,Assembly Supervisor
+1547,Electrical Superintendent
+1548,Estimating Manager
+1551,Facility Manager
+1553,Facilities Supervisor
+1555,Field Operator
+1557,Floor Technician
+1559,Housekeeping Manager
+1565,Maintenance Supervisor
+1568,Production Supervisor
+1569,Property Manager
+1570,Security Director
+1573,Assembler
+1574,Assembly Supervisor
+1577,Boilermaker
+1579,Brazer
+1581,Chemical Plant Operator
+1585,CNC Machinist
+1586,CNC Operator
+1590,Controller
+1591,Controls Engineer
+1593,Cutter
+1595,Design Engineer
+1596,Designer
+1598,Distribution Manager
+1599,Division Manager
+1600,Electrician
+1602,Electronic Assembler
+1603,Electronic Technician
+1605,Equipment Technician
+1606,Estimating Manager
+1607,Expediter
+1608,Fabricator
+1609,Facilities Manager
+1611,Field Service Technician
+1614,Food Technologist
+1615,General Laborer
+1617,Industrial Engineer
+1619,Inspector
+1620,Machine Operator
+1624,Machinist
+1625,Manager or Supervisor
+1626,Manufacturing Engineer
+1629,Manufacturing Technician
+1630,Master Scheduler
+1631,Material Handler
+1635,Mechanical Designer
+1636,Mechanical Engineer
+1637,Mechanical Technician
+1639,Millwright
+1640,Operations Clerk
+1642,Operator
+1648,Plant Manager
+1649,Plant Operator
+1655,Precision Assembler
+1658,Process Engineer
+1659,Process Operator
+1663,Product Manager
+1666,Production Control Manager
+1669,Production Manager
+1671,Production Planner/Scheduler
+1672,Production Supervisor
+1673,Production Technician
+1674,Production Worker
+1676,Purchasing Agent/Buyer
+1677,Quality Assurance Engineer
+1678,Quality Assurance Manager
+1679,Quality Control Analyst
+1680,Quality Control Inspector
+1681,Quality Engineer
+1682,Quality Inspector
+1683,Quality Manager
+1685,Safety Manager
+1686,Safety Manager/Coordinator
+1689,Senior Buyer
+1690,Shift Supervisor
+1694,Stationary Engineer
+1698,Test Engineer
+1704,Warehouse Associate
+1706,Warehouse Worker
+1708,Welder
+1709,Woodworker
+1711,Delivery Drivers
+1713,Truck Driver
+1715,Bus Driver
+1717,Route Driver
+1719,Scheduler
+1720,Streetcar Operator
+1721,Subway Operator
+1723,Cab Driver
+1724,Chauffeur
+1725,Courier
+1727,Driver
+1731,Fleet Manager
+1733,Taxi Driver
+1734,Expeditor
+1735,Fork Lift Operator
+1736,Logistician
+1741,Package Handler
+1743,Production Scheduler
+1745,Distribution Center Manager
+1747,Distribution Manager
+1749,Estimating Manager
+1750,Estimator
+1751,Inventory Control Analyst
+1752,Inventory Control Clerk
+1753,Inventory Control Manager
+1754,Inventory Control Supervisor
+1755,Operations Manager
+1764,Logistics Analyst
+1765,Logistics Coordinator
+1766,Logistics Manager
+1767,Logistics Specialist
+1770,Traffic Manager
+1778,Transportation Manager
+1779,Transportation Planner
+1780,Transportation Supervisor
+1781,Travel Coordinator
+1782,Travel Manager
+1783,Captain
+1784,Crew
+1786,Deckhand
+1796,Aircraft Pilot
+1802,Helicopter Pilot
+1803,Conductor
+1804,Engineer
+1805,Locomotive Engineer
+1812,Train Operator
+1814,Aerospace Engineer
+1816,Application Engineer
+1819,Biomedical Engineer
+1822,Chemical Engineer
+1823,Chief Engineer
+1824,Civil Engineer
+1825,Commissioning Engineer
+1828,Computer Hardware Engineer
+1830,Construction Engineer
+1832,Controls Engineer
+1834,Design Engineer
+1838,Electrical Design Engineer
+1839,Electrical Engineer
+1846,Engineering Manager
+1848,Engineering Technician
+1850,Environmental Engineer
+1856,Field Service Engineer
+1861,Hardware Engineer
+1864,Industrial Engineer
+1865,Instrumentation Engineer
+1867,Junior Engineer
+1868,Lead Engineer
+1871,Maintenance Engineer
+1873,Manufacturing Engineer
+1874,Marine Engineer
+1876,Mechanical Design Engineer
+1877,Mechanical Engineer
+1883,Network Engineer
+1887,Petroleum Engineer
+1891,Planning Engineer
+1892,Plant Engineer
+1897,Process Engineer
+1899,Product Engineer
+1900,Production Engineer
+1902,Project Engineer
+1903,Project Assistant
+1906,Quality Assurance Engineer
+1907,Quality Control Engineer
+1908,Quality Engineer
+1911,Research Engineer
+1915,Rotating Equipment Engineer
+1916,R&D Engineer
+1917,Safety Engineer
+1918,Sales Engineer
+1921,Senior Electrical Engineer
+1922,Senior Manufacturing Engineer
+1923,Senior Mechanical Engineer
+1924,Senior Process Engineer
+1925,Software Engineer
+1928,Stationary Engineer
+1929,Structural Engineer
+1931,Systems Engineer
+1932,Technical Support Engineer
+1933,Telecommunications Engineer
+1934,Test Engineer
+1935,Transmission Engineer
+1939,Validation Engineer
+1942,Account Executive
+1949,Administrator
+1950,Admissions Clerk
+1951,Admissions Director
+1953,Analyst
+1954,Anesthesiologist
+1958,Athletic Trainer
+1959,Audiologist
+1963,Billing Manager
+1964,Billing Specialist
+1965,Biologist
+1967,Business Analyst
+1970,Cardiovascular Technologist
+1971,Case Manager
+1972,Certified Medical Assistant
+1974,Certified Nursing Assistant
+1975,Certified Pharmacy Technician
+1976,Charge Nurse
+1977,Chief Financial Officer
+1978,Chiropractor
+1979,Claims Examiner
+1980,Claims Specialist
+1981,Clerk
+1984,Clinical Liaison
+1985,Clinical Nurse Manager
+1986,Clinical Research Associate
+1987,Clinical Research Coordinator
+1989,Clinical Specialist
+1990,Coder
+1993,Computer Programmer
+1994,Consultant
+1995,Coordinator
+1996,Counselor
+1997,Customer Service Representative
+1998,Dental Assistant
+1999,Dental Hygienist
+2000,Dentist
+2002,Diagnostic Medical Sonographer
+2003,Dialysis Nurse
+2004,Dietitian
+2008,Doctor
+2009,Emergency Medical Technician
+2010,Emergency Room Nurse
+2012,Exercise physiologist
+2013,Executive Assistant
+2014,Executive Director
+2015,Family Nurse Practitioner
+2016,Financial Analyst
+2017,Flight Nurse
+2020,Health Educator
+2025,Healthcare Specialist
+2026,Home Health Aide
+2027,Home Health Nurse
+2028,Hospice Aide
+2031,Hospice Nurse
+2035,Information Technology Specialist
+2036,Intensive Care Nurse
+2037,Interventional Radiology Nurse
+2038,Labor and Delivery Nurse
+2041,Licensed Practical Nurse
+2042,Licensed Vocational Nurse
+2043,Massage Therapist
+2044,Medical Administrative
+2046,Medical Assistant or Receptionist
+2048,Medical Billing Specialist
+2050,Medical Coder
+2051,Medical Laboratory Technologist
+2053,Medical Office Assistant
+2055,Medical Office Specialist
+2057,Medical Receptionist
+2058,Medical Records Clerk
+2060,Medical Records Technician
+2061,Medical Sales
+2062,Medical Secretary
+2064,Medical Technician
+2065,Medical Technologist
+2066,Medical Transcriptionist
+2067,Microbiologist
+2069,MRI Technologist
+2070,Neonatal Intensive Care Nurse
+2071,Nuclear Medicine Technologist
+2072,Nurse
+2073,Nurse Aide
+2074,Nurse Anesthetist
+2076,Nurse Consultant
+2078,Nurse Manager
+2079,Nurse Midwife
+2080,Nurse Paralegal
+2081,Nurse Practitioner
+2082,Nursing Assistant
+2083,Nursing Home Administrator
+2084,Nutritionist
+2085,Occupational Health Nurse
+2087,Occupational Therapist
+2088,Occupational Therapy Assistant
+2089,Office Assistant
+2090,Office Clerk
+2091,Office Manager
+2092,Office Nurse
+2093,Oncology Nurse
+2094,Operating Room Nurse
+2095,Operations Manager
+2096,Optician
+2101,Paramedic
+2103,Patient Care Associate
+2108,Pediatric Nurse
+2109,Pediatric Nurse Practitioner
+2110,Perioperative Nurse
+2111,Pharmaceutical Sales
+2112,Pharmaceutical Sales Representative
+2113,Pharmacist
+2114,Pharmacy Clerk
+2115,Pharmacy Technician
+2116,Phlebotomist
+2117,Physical Therapist
+2118,Physical Therapist Assistant
+2119,Physician
+2121,Physician Assistant
+2122,Podiatrist
+2125,Program Director
+2126,Program Manager
+2127,Programmer
+2128,Programmer Analyst
+2130,Project Manager
+2132,Psychiatric Aide
+2133,Psychiatric Nurse
+2135,Public Health Nurse
+2136,Quality Coordinator
+2137,Radiation Therapist
+2138,Radiologic Technologist
+2139,Receptionist
+2141,Recruiter
+2143,Regional Sales Manager
+2144,Registered Medical Assistant
+2145,Registered Nurse (RN)
+2146,Registered Nurse (RN) Case Manager
+2148,Registered Nurse (RN) First Assistant
+2156,Research Assistant
+2157,Research Associate
+2161,Sales Associate
+2162,Sales Manager
+2163,Sales Representative
+2164,School Nurse
+2165,Secretary
+2166,Senior Programmer Analyst
+2167,Social Services
+2168,Software Developer
+2169,Software Engineer
+2170,Sonographer
+2172,Staffing Coordinator
+2173,Supervisor
+2174,Supply Technician
+2175,Surgeon
+2176,Surgical Technologist
+2177,Telemetry Nurse
+2178,Therapist
+2179,Transcriptionist
+2181,Veterinarian
+2182,Veterinary Assistant
+2184,Wellness Nurse
+2185,Application Developer
+2186,Application Support Analyst
+2187,Applications Engineer
+2189,Chief Information Officer (CIO)
+2190,Chief Technology Officer (CTO)
+2201,Computer Programmer
+2205,Customer Support Specialist
+2208,Database Administrator
+2210,Desktop Support Specialist
+2211,Developer
+2212,Director of Technology
+2213,Front End Developer
+2215,Help Desk Technician
+2223,Java Developer
+2224,Junior Software Engineer
+2227,Network Administrator
+2230,Network Engineer
+2232,Programmer
+2233,Programmer Analyst
+2234,Security Specialist
+2236,Senior Database Administrator
+2240,Senior Programmer
+2241,Senior Programmer Analyst
+2243,Senior Software Engineer
+2245,Senior System Administrator
+2246,Senior System Analyst
+2249,Senior Systems Analyst
+2253,Software Architect
+2254,Software Developer
+2255,Software Engineer
+2257,Support Specialist
+2259,Systems Administrator
+2260,Systems Analyst
+2264,Technical Specialist
+2265,Technical Support Engineer
+2266,Technical Support Specialist
+2267,Telecommunications Specialist
+2270,Webmaster
+2271,Analyst
+2277,Associate Professor
+2282,Business Analyst
+2286,Chemical Engineer
+2287,Chemical Technician
+2292,Clinical Research Associate
+2293,Clinical Research Coordinator
+2297,Computer Programmer
+2309,Environmental Scientist
+2314,Field Technician
+2315,Financial Analyst
+2317,Forensic Scientist
+2332,Insurance Representative
+2335,Junior Analyst
+2336,Laboratory Assistant
+2338,Laboratory Manager
+2339,Laboratory Technician
+2342,Marketing Consultant
+2352,Operations Clerk
+2355,Operations Supervisor
+2356,Operations Team Leader
+2368,Pharmacy Assistant
+2371,Process Engineer
+2374,Product Engineer
+2376,Production Team Leader
+2379,Project Manager
+2382,Quality Assurance Manager
+2384,Quality Control Analyst
+2385,Quality Control Manager
+2386,Quality Control Supervisor
+2387,Regulatory Affairs Associate
+2392,Research Assistant
+2393,Research Chemist
+2395,Research Technician
+2404,Research Scientist
+2405,Researcher
+2408,Sales Analyst
+2410,Science Technician
+2416,Software Developer
+2419,Special Projects Coordinator
+2420,Statistician
+2424,Structural Engineer
+2425,Systems Analyst
+2431,Technology Specialist
+2437,Veterinarian
+2450,Relief Veterinarian
+2465,Veterinary Surgeon
+2477,Veterinary Receptionist
+2480,Dairy Farmer
+2484,Ranch Manager
+2490,Dog Groomer
+2492,Dog Trainer
+2493,Dog Walker
+2496,Kennel Attendant
+2497,Kennel Manager
+2502,Pet Sitter
+2505,Service Dog Trainer
+2517,Farm Manager
+2520,Groom
+2524,Horse Trainer
+2527,Jockey
+2546,Marine Biologist
+2571,Wildlife Biologist
+2587,Zoologist
+2595,Grant Writer
+2602,Associate Pastor
+2604,Campaign Manager
+2605,Case Manager
+2606,Chaplain
+2607,Chemical Dependency Counselor
+2610,Child Care Worker
+2613,Childbirth Educator
+2615,Community Organizer
+2621,Compliance Coordinator
+2626,Counselor
+2628,Development Assistant
+2629,Development Associate
+2630,Development Coordinator
+2631,Development Director
+2632,Development Manager
+2633,Development Officer
+2643,Fund-Raiser
+2644,Fundraising Coordinator
+2647,Grant/Contracts Specialist
+2650,Grant Writer
+2664,Marketing Associate
+2665,Medical Social Worker
+2671,Minister
+2674,Pastor
+2677,Planning Manager
+2678,Policy Analyst
+2679,Program Assistant
+2680,Program Associate
+2681,Program Coordinator
+2682,Program Director
+2683,Program Manager
+2685,Project Manager
+2689,Social Media Coordinator
+2690,Social Services Director
+2692,Social Worker
+2696,Team Leader
+2698,Volunteer Coordinator
+2700,Volunteer Manager
+2703,Administrator
+2706,Art Teacher
+2708,Assistant Principal
+2710,Athletic Director
+2711,Autism/Behavior Specialist
+2713,Behavior Specialist
+2715,Bus Driver
+2719,Coach
+2721,Communication Specialist
+2722,Computer Science Teacher
+2724,Custodian
+2729,ESL Teacher
+2731,Food Service Supervisor
+2732,Guidance Counselor
+2734,Human Resources Assistant
+2735,Human Resources Director
+2737,Instrumental Music Teacher
+2739,Life Skills Teacher
+2740,Math Teacher
+2741,Occupational Therapist
+2743,Principal
+2747,School Counselor
+2749,School Nurse
+2750,School Psychologist
+2751,School Social Worker
+2752,Science Teacher
+2753,Social Studies Teacher
+2755,Special Education Teacher
+2758,Substitute Teacher
+2760,Superintendent
+2766,Account Executive
+2769,Assistant Coach
+2770,Assistant General Manager
+2774,Athletic Director
+2775,Athletic Trainer
+2776,Broadcaster
+2782,Defensive Coordinator
+2784,Equipment Manager
+2785,Event Coordinator
+2786,Facilities Manager
+2787,Fitness Instructor
+2788,Front Desk Attendant
+2789,Front Desk Manager
+2790,General Manager
+2792,Groundskeeper
+2795,Maintenance Worker
+2796,Marketing Assistant
+2797,Marketing Director
+2799,Offensive Coordinator
+2800,Sports Official
+2802,Personal Trainer
+2804,Producer
+2805,Publicist
+2807,Referee
+2809,Site Manager
+2825,Tennis Pro
+2827,Umpire
+2828,Yoga Teacher

@@ -1,0 +1,115 @@
+.divider {
+    border: 1px solid #d4dadf;
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.faq-image-1{
+    width: 100%;
+    border-radius: 50%;
+}
+.ml--15 {
+    margin-left: -15px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 320px) {
+    .faq-image-1 {
+        width: 20%;
+    }
+    .ml--15 {
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    .fs-12 {
+        font-size: 10px;
+    }
+    h6 {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .faq-image-1 {
+        width: 15%;
+    }
+    .ml--15 {
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    .fs-12 {
+        font-size: 10px;
+    }
+    h6 {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .faq-image-1 {
+        width: 10%;
+    }
+    .ml--15 {
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    .fs-12 {
+        font-size: 12px;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .faq-image-1 {
+        width: 5%;
+    }
+    .ml--15 {
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    .fs-12 {
+        font-size: 12px;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .faq-image-1 {
+        width: 130%;
+    }
+    .ml--15 {
+        margin-left: -15px;
+    }
+    .fs-12 {
+        font-size: 12px;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+}
+
+// background-color: white;
+// border-radius: 4px;
+// padding: 30px;
+// position: relative;
+// z-index: 3;
+// text-decoration: none;
+// overflow: hidden;
+// width: 100%;
+// display: block;
+// outline: none;
+// box-shadow: 0 3px 8px 0 rgba(0,0,0,0.03);
+// border: 1px solid #d4dadf;

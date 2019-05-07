@@ -1,0 +1,52 @@
+img {
+  height: 55px;
+}
+
+.dropdown-menu {
+  left: -127px;
+}
+
+// .sticky {
+//     position: sticky;
+//     top: 0;
+//     // width: 100%;
+//     z-index: 1;
+//   }
+.nav-item {
+  cursor: pointer;
+}
+.navbar-btn-avatar {
+  margin-left: -14px;
+  padding-right: 0;
+  margin-top: -9px;
+  margin-bottom: 5px;
+}
+
+.navbar-btn-avatar i {
+  margin-right: -3px;
+}
+
+.m-left-1 {
+  margin-left: 8px;
+}
+
+.navbar-btn-icon i {
+  font-size: 17px;
+  line-height: 17px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  vertical-align: middle;
+}
+
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  background-color: #65696d;
+}

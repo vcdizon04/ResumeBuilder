@@ -1,0 +1,426 @@
+<app-navbar2></app-navbar2>
+<div class="editable-item-toolbar" style="display:none;">
+  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-secondary ">
+      Add
+    </label>
+    <label (click)="deleteEntry()" class="btn btn-danger">
+      <i class="fa fa-trash-o" aria-hidden="true"></i>
+    </label>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalEmail" tabindex="-1" role="dialog" aria-labelledby="modalEmailTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEmailTitle">Enter Email</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input  [(ngModel)]="email"  type="text" class="form-control" placeholder="Email Address" >
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="sendResumeByEmail()">Send</button>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-muted p-4" id="exampleModalCenterTitle">Add Section</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-4 p-0">
+            <div class="add-section-sidebar">
+              <div>
+                <div class="add-section-list">
+                  <!-- <div class="title text-primary text-center">Recommended for You</div> -->
+                  <ul>
+                        <li (click)="chooseSection('professionalSummary')"  class="{{ currentAddSectionItem == 'professionalSummary'? 'active' : ''}}"><span>Professional Summary</span><i class="icon-23-free-star-two text-primary"></i></li>
+                        <li (click)="chooseSection('education')" class="{{ currentAddSectionItem == 'education'? 'active' : ''}}"><span>Education and Qualifications</span><i class="icon-add-1"></i></li>
+                        <li (click)="chooseSection('courses_licenses')" class="{{ currentAddSectionItem == 'courses_licenses'? 'active' : ''}}"><span>Courses and Licenses</span><i class="icon-lock"></i></li>
+                        <li (click)="chooseSection('skills')" class="{{ currentAddSectionItem == 'skills'? 'active' : ''}}"><span>Skills</span><i class="icon-23-free-star-two text-primary"></i></li>
+                        <!-- git <li (click)="chooseSection('core_competencies')"  class="{{ currentAddSectionItem == 'core_competencies'? 'active' : ''}}"><span>Core Competencies</span><i class="icon-23-free-star-two text-primary"></i></li> -->
+                        <li (click)="chooseSection('experience')"  class="{{ currentAddSectionItem == 'experience'? 'active' : ''}}"><span>Employment History</span><i class="icon-23-free-star-two text-primary"></i></li>
+                        <li (click)="chooseSection('references')" class="{{ currentAddSectionItem == 'references'? 'active' : ''}}"><span>References</span><i class="icon-23-free-star-two text-primary"></i></li>
+                  </ul>
+                </div>
+                <!-- <div class="add-section-list">
+                      <div class="title text-muted text-center">All Sections</div>
+                      <ul>
+                        <li class=""><span>Projects</span></li>
+                        <li class=""><span>Books</span><i class="icon-lock"></i></li>
+                        <li class=""><span>Courses</span></li>
+                        <li class=""><span>Languages</span></li>
+                        <li class=""><span>Passions</span></li>
+                        <li class=""><span>My Life Philosophy</span><i class="icon-lock"></i>
+                        </li><li class=""><span>Summary</span></li>
+                        <li class=""><span>Strengths</span></li>
+                        <li class=""><span>References</span><i class="icon-lock"></i></li>
+                      </ul>
+                    </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="preview-item  px-5 ">
+              <div *ngIf="currentAddSectionItem == 'objectives' " class="objectives">
+                <h4 style="color: #FF9900;"><strong>OBJECTIVES</strong></h4>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                </ul>
+                <hr class="dash">
+              </div>
+              <div *ngIf="currentAddSectionItem === 'skills' " class=" row form">
+                <div class="has-search col-12">
+                  <span class="fa fa-search form-control-feedback"></span>
+                  <ng-select class="custom" (change)="selectJob()" placeholder="Job Title" [(ngModel)]="currentJob">
+                    <ng-option *ngFor="let job of jobTitlesFiltered" [value]="job">{{job.JOB_VALUE}}</ng-option>
+                  </ng-select>
+                  <virtual-scroller #scroll [items]="jobSkillsFiltered">
+                    <ul class="mt-4 list-group ">
+                      <li class="p-0" (click)="addItemSkill(item?.SKILL_VALUE)" *ngFor="let item of scroll.viewPortItems; let i = index">
+                        <div class="row">
+                          <div class="col-1 p-0">
+                            <ng-container *ngIf="skills.indexOf(item?.SKILL_VALUE) < 0; else elseSkills">
+                                   <span style="display: block;     margin-left: auto;     margin-right: auto; writing-mode: tb-rl; font-size: 12px; margin-top: 15px;" class="action "> ADD </span>
+                            </ng-container>
+                            <ng-template #elseSkills>
+                                   <span  style="display: block;     margin-left: auto;     margin-right: auto; writing-mode: tb-rl; font-size: 12px; margin-top: 15px;" 
+                                class="action"> REMOVE </span>
+                            </ng-template>
+                          </div>
+                          <div class="col-11 p-3">
+                            <span class="">{{item?.SKILL_VALUE}}</span>
+
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </virtual-scroller>
+                </div>
+
+              </div>
+              <div *ngIf="currentAddSectionItem === 'professionalSummary' " class=" row form">
+                <div class="has-search col-12">
+                  <span class="fa fa-search form-control-feedback"></span>
+                  <ng-select class="custom" (change)="selectJob()" placeholder="Job Title" [(ngModel)]="currentJob">
+                    <ng-option *ngFor="let job of jobTitlesFiltered" [value]="job">{{job.JOB_VALUE}}</ng-option>
+                  </ng-select>
+                  <virtual-scroller #scroll [items]="jobProfessionalSummaryFiltered">
+                    <ul class="mt-4 list-group ">
+                      <li class="p-0" (click)="addItemJobProfessionalSummary(item?.summary)" *ngFor="let item of scroll.viewPortItems; let i = index">
+                        <div class="row">
+                          <div class="col-1 p-0">
+                            <ng-container *ngIf="professionalSummary.indexOf(item?.summary) < 0; else elseJobProfSummary">
+                                   <span style="display: block;     margin-left: auto;     margin-right: auto; writing-mode: tb-rl; font-size: 12px; margin-top: 15px;" class="action "> ADD </span>
+                            </ng-container>
+                            <ng-template #elseJobProfSummary>
+                                  
+                            <span  style="display: block;     margin-left: auto;     margin-right: auto; writing-mode: tb-rl; font-size: 12px; margin-top: 15px;" 
+                                class="action"> REMOVE </span>
+
+                            </ng-template>
+                        
+                       
+                          </div>
+                          <div class="col-11 p-3">
+                            <span class="">{{item?.summary}}</span>
+
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </virtual-scroller>
+                </div>
+
+              </div>
+             
+              <div *ngIf="currentAddSectionItem === 'experience' " class="experience form-group row">
+                <div class="col mb-3">
+                  <div class="has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <ng-select class="custom" placeholder="Job Title" (change)="selectJob()" [(ngModel)]="currentJob">
+                      <ng-option *ngFor="let job of jobTitlesFiltered" [value]="job">{{job.JOB_VALUE}}</ng-option>
+                    </ng-select>
+                  </div>
+                </div>
+                <div class="col-6  mb-3">
+                  <input [(ngModel)]="experience.company" type="text" class="form-control" placeholder="Employer">
+                </div>
+                <div class="col-6  mb-3">
+                  <input [(ngModel)]="experience.city" type="text" class="form-control" placeholder="City">
+                </div>
+                <div class="col-6  mb-3">
+                  <input [(ngModel)]="experience.state" type="text" class="form-control" placeholder="State">
+                </div>
+                <div class="col-12  mb-3">
+                  <virtual-scroller #scroll [items]="jobDescriptionsFiltered">
+                    <ul class="mt-4 list-group ">
+                      <li (click)="addItemJobDescription(item?.DESCRIPTION_VALUE)" class="p-0" *ngFor="let item of scroll.viewPortItems">
+                        <div class="row">
+                          <div class="col-1 p-0">
+                            <ng-container *ngIf="experience.desc.indexOf(item?.DESCRIPTION_VALUE) < 0; else elseJobDescription">
+                                    <span style="display: block;     margin-left: auto;     margin-right: auto; writing-mode: tb-rl; font-size: 12px; margin-top: 15px;" class="action "> ADD </span>
+                            </ng-container>
+                            <ng-template #elseJobDescription>
+                                    <span  style="display: block;     margin-left: auto;     margin-right: auto; writing-mode: tb-rl; font-size: 12px; margin-top: 15px;" 
+                                class="action"> REMOVE </span>
+                            </ng-template>
+                          </div>
+                          <div class="col-11 p-3">
+                            <span class="">{{item?.DESCRIPTION_VALUE}}</span>
+
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </virtual-scroller>
+                  <!-- <textarea class="form-control" [(ngModel)]="experience.desc" ></textarea> -->
+                </div>
+                <!-- <h4 style="color: #FF9900;"><strong>EXPERIENCE</strong></h4>
+        
+                    <strong>SALES AND MARKETING DIRECTOR<span style="float: right;">2011-2013</span></strong>
+                    <p>GREAT COMPANY<span style="float: right;">MICHIGAN, MI</span></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur</p>
+                    <hr class="dash"> -->
+              </div>
+              <div *ngIf="currentAddSectionItem === 'education' "class="education">
+                  <div class="form-group">
+                    <input type="text" class="form-control mb-3" placeholder="Year" [(ngModel)]="education.year">
+                    <input type="text" class="form-control mb-3" placeholder="School" [(ngModel)]="education.school">
+                    <textarea class="form-control mb-3" placeholder="Description" [(ngModel)]="education.info1"></textarea>
+                  </div>
+              </div>
+              <div *ngIf="currentAddSectionItem === 'courses_licenses' ">
+                  <div class="form-group">
+                    <input type="text" class="form-control mb-3" placeholder="Year" [(ngModel)]="coursesLicenses.year">
+                    <input type="text" class="form-control mb-3" placeholder="Courses or Licenses" [(ngModel)]="coursesLicenses.coursesLicenses">
+                    <textarea class="form-control mb-3" placeholder="Description" [(ngModel)]="coursesLicenses.info1"></textarea>
+                  </div>
+              </div>
+              <div *ngIf="currentAddSectionItem === 'references'">
+                <div class="form-group">
+                  <input [(ngModel)]="references.name" type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input [(ngModel)]="references.contactNumber" type="tel" class="form-control" placeholder="Contact Number">
+                </div>
+                <div class="form-group">
+                  <input [(ngModel)]="references.address" type="text" class="form-control" placeholder="Address">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer px-4 py-2">
+        <div class="row">
+          <div class="col-8 p-3">
+            Include any majors, minors, or specializations that are relevant to your next desired role and is part of
+            your degree(s) or field of study.
+          </div>
+          <div class="col-4 p-4">
+            <button type="button" class="btn btn-primary btn-block m-top-1" data-dismiss="modal" (click)="addSection(currentAddSectionItem)">Add
+              to Resume</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle2"
+  aria-hidden="true">
+  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-muted p-4" id="exampleModalCenterTitle2">Add Photo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-0">
+        <div class="image-editor-view">
+          <div class="avatar-panel">
+            <img [src]="ResumeJson?.basic.profile ? ResumeJson?.basic.profile : 'assets/images/Resume/profile-placeholder.svg'"
+              class="img-responsive img-circle" style="height:140px; width: 140px; border: 1px solid rgb(230, 230, 230);">
+            <div class="responsive-transition-item avatar-button-container img-circle animated-hover fadeIn">
+              <button type="button" class="btn btn-primary btn-icon"><i class="icon icon-13-trash-bin btn-icon-single"></i></button>
+            </div>
+          </div>
+          <div class="import-panel">
+            <div class="row">
+              <div class="col text-center p-4">
+                <p> <span class="text-muted ">Import photo</span></p>
+                <label for="fileInput" class="btn btn-outline-info my-0 mx-2">From Computer</label>
+                <input id="fileInput" type="file" accept="image/*" capture class="hidden" accept="image/*" (change)="previeImage($event)">
+                <button type="button" class="btn btn-info top-ok mx-2 px-5" data-dismiss="modal">OK</button>
+                <!-- <button type="button" class="btn btn-facebook btn-block btn-icon m-top-1">
+                    <i class="icon icon-facebook-squared btn-icon-right"></i>From Facebook
+                  </button> -->
+              </div>
+              <!-- <div class="col-sm-4 col-sm-offset-2 align-self-end">
+                  <button type="button" class="btn btn-purple btn-block top-ok">OK</button>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer bg-light">
+        <p class="text-dark text-center p-3 m-0">Disclaimer. Keep in mind that in some US states, having a photo on
+          your resume is forbidden.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row resume-editor">
+    <div class="col-lg-2 sidebar">
+      <div class="row" *ngIf="isSidebarAction === 'main'">
+        <div class="col-12 py-3 pl-2rem pr-3rem bottom-border">
+          <button type="button" class="btn btn-info btn-block btn-add-section" data-toggle="modal" data-target="#exampleModalCenter">
+            <i class="fa fa-plus-square pr-3"></i>
+            <span class="spn-txt">Add New Section</span>
+          </button>
+        </div>
+        <div class="col-12  py-3 px-5 border-bottom">
+          <!-- <button (click)="save()" type="button" class="btn  btn-info btn-block" > -->
+          <a class="sidebar-btn " (click)="chooseTemplate()">
+            <i class="fa fa-th-list pr-3"></i>
+            <span class="spn-txt">Pick Template</span>
+          </a>
+        </div>
+        <div class="col-12  py-3 px-5 border-bottom">
+          <!-- <button (click)="download()" type="button" class="btn  btn-info btn-block" > -->
+          <a class="sidebar-btn" (click)="download()">
+            <i class="fa fa-download pr-3"></i>
+            <span class="spn-txt">Download</span>
+          </a>
+          <!-- </button> -->
+        </div>
+        <div class="col-12  py-3 px-5 border-bottom">
+            <a class="sidebar-btn" data-toggle="modal" data-target="#modalEmail">
+              <i class="fa fa-envelope pr-3"></i>
+              <span class="spn-txt">Send to Email</span> 
+            </a>
+        </div>
+        <div class="col-12  py-3 px-5 border-bottom">
+          <!-- <button (click)="save()" type="button" class="btn  btn-info btn-block" > -->
+          <a class="sidebar-btn " (click)="save()">
+            <i class="fa fa-save pr-3"></i>
+            <span class="spn-txt">Save</span>
+          </a>
+        </div>
+     
+      </div>
+      <div *ngIf="isSidebarAction === 'chooseTemplate'" class="row">
+        <div class="col-12 py-3 px-2 border-bottom">
+          <button (click)="gotoMainSideBar()" type="button" class="btn btn-info btn-block btn-add-section">
+            <i class="fa fa-arrow-left pr-3"></i>
+            <span class="spn-txt">Back to Navigation</span>
+          </button>
+        </div>
+        <div class="col-12 py-3 px-4" style="max-height: 1127px;
+        overflow: scroll;">
+            <div class="mb-3 templates" (click)="selectTemplate('resume1')">
+                <img src="assets/images/Resume Templates/8.jpg" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume2')">
+                <img src="assets/images/Resume Templates/9.jpg" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume4')">
+                <img src="assets/images/Resume Templates/16.jpg" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume3')">
+                <img src="assets/images/Resume Templates/5.jpg" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume5')">
+                <img src="assets/images/Resume Templates/1 PR_ResumeTemplate.PNG" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume6')">
+                <img src="assets/images/Resume Templates/1.jpg" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume8')">
+                <img src="assets/images/Resume Templates/3.jpg" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume9')">
+                <img src="assets/images/Resume Templates/9 PR_ResumeTemplate.PNG" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume11')">
+                <img src="assets/images/Resume Templates/14.jpg" style="width:100%;" alt="">
+            </div>  
+            <div class="mb-3 templates" (click)="selectTemplate('resume12')">
+                <img src="assets/images/Resume Templates/30 PR_ResumeTemplate_New.PNG" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume13')">
+                <img src="assets/images/Resume Templates/28 PR_ResumeTemplate_New.PNG" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume14')">
+                <img src="assets/images/Resume Templates/23 PR_ResumeTemplate.PNG" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume15')">
+                <img src="assets/images/Resume Templates/11 PR_ResumeTemplate.PNG" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume16')">
+                <img src="assets/images/Resume Templates/10 PR_ResumeTemplate.PNG" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume17')">
+                <img src="assets/images/Resume Templates/15.jpg" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume18')">
+                <img src="assets/images/Resume Templates/22 PR_ResumeTemplate.PNG" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume19')">
+                <img src="assets/images/Resume Templates/28 PR_ResumeTemplate.PNG" style="width:100%;" alt="">
+            </div> 
+            <div class="mb-3 templates" (click)="selectTemplate('resume20')">
+                <img src="assets/images/Resume Templates/17 PR_ResumeTemplate.PNG" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume21')">
+                <img src="assets/images/Resume Templates/18 PR_ResumeTemplate.PNG" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume22')">
+                <img src="assets/images/Resume Templates/15 PR_ResumeTemplate.PNG" style="width:100%;" alt="">
+            </div>
+            <div class="mb-3 templates" (click)="selectTemplate('resume23')">
+                <img src="assets/images/Resume Templates/21 PR_ResumeTemplate.PNG" style="width:100%;" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-10 m-0 p-0">
+      <div class="preview mt-0 mb-5">
+        <div class="my-3 row justify-content-left">
+          <div class="col p-0">
+            <button (click)="undo()" class="btn btn-light btn-square animated-hover mr-3"><i class="fa fa-undo text-primary"></i></button>
+            <button (click)="redo()" class="btn btn-light btn-square animated-hover"><i class="fa fa-repeat text-primary"></i></button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col p-0">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

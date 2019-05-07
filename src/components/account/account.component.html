@@ -1,0 +1,25 @@
+<app-navbar2></app-navbar2>
+  <div class="container mt-5" style="min-height: 70vh;">
+    <div class="row">
+      <div class="col-4">
+        <!-- <p class="text-primary">Update Password</p> -->
+          <!-- <div class="form-group">
+            <label for="oldPassword" >Enter Old Password</label>
+            <input type="password" id="oldPassword" placeholder="Old password" class="form-control">
+          </div> -->
+          <div class="form-group">
+              <label for="newPassword" >Enter New Password</label>
+              <input type="password" [(ngModel)]="newPassword" id="newPassword" placeholder="New password" class="form-control">
+              <input type="password" [(ngModel)]="confirmPassword"  id="confirmPassword" placeholder="Confirm password" class="form-control mt-2">
+          </div>
+          <div *ngIf="newPassword !== confirmPassword" class="alert alert-warning" role="alert">
+              Password not match
+          </div>
+          <div *ngIf="err" class="alert alert-danger" role="alert">
+              {{err.message}}
+          </div>
+          <button [disabled]="newPassword !== confirmPassword && newPassword " (click)="updatePassword()" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>

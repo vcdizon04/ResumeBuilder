@@ -1,0 +1,20 @@
+img{
+    height:100px;
+}
+
+
+.sticky {
+    position: sticky;
+    top: 0;
+    // width: 100%;
+    z-index: 1;
+  }
+
+.navbar{
+    -webkit-transition:background .5s;
+        -moz-transition:background .5s;
+        -o-transition:background .5s;
+        transition:background .5s;
+}
+
+ 

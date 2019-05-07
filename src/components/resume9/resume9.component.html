@@ -1,0 +1,123 @@
+
+<div class="document row row-eq-height"  [style.background-color]=" onEdit ? '#DCDBE0' : '#FFF'" #document>
+  <div class="container mx-3 my-3" >
+    <div class="mt-5 basic">
+      <h1 class="editable name" [innerHtml]="ResumeJson?.basic.name" style="font-size: 96px;color: #2e74b5;"></h1>
+      <img src="/assets/images/1-T3.png" alt=""><span class="editable phone" [innerHtml]="ResumeJson?.basic.phone"></span><span contenteditable="false"> /</span>
+      <span>
+      <img src="/assets/images/2-T3.png" alt="">
+      </span>
+      <span class="editable email" [innerHtml]="ResumeJson?.basic.email"></span>
+    </div>
+    <div class="content-container">
+      <div class="content">
+        <div *ngIf="ResumeJson?.professionalSummary" class="mt-5 editable-container professionalSummary">
+          <div class="editable-item">
+              <div class="editable-toolbar" *ngIf="currentSectionEditing === 'professionalSummary'">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-secondary ">
+                  Add
+                  </label>
+                  <label (click)="deleteSection()" class="btn btn-danger">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                  </label>
+                </div>
+              </div> 
+              <h4 style="color: #2e74b5" class="editable title" [innerHtml]="ResumeJson?.professionalSummary.title"></h4>
+          </div>
+          <p *ngFor="let summary of ResumeJson?.professionalSummary.professionalSummary" class="summary editable-item editable" [innerHtml]="summary"></p>
+        </div>
+        <div class="mt-3 editable-container experience" *ngIf="ResumeJson?.experience" dnd-sortable-container [sortableData]="ResumeJson?.experience.experience">
+          <div class="editable-item">
+            <div class="editable-toolbar" *ngIf="currentSectionEditing === 'experience'">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-secondary ">
+                Add
+                </label>
+                <label (click)="deleteSection()" class="btn btn-danger">
+                  <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </label>
+              </div>
+            </div>
+            <h4 style="color: #2e74b5; font-size: 26px" class="editable title" [innerHtml]="ResumeJson?.experience.title"></h4>
+          </div>
+          <div>
+            <div class="row">
+              <div class="col-sm-6 editable-item" *ngFor="let experience of ResumeJson?.experience.experience ; let i = index" dnd-sortable [sortableIndex]="i">
+                <div>
+                  <h4 style="font-size:26px;"><span class="editable date" [innerHtml]="experience.date"></span><span>&nbsp;&#9679;&nbsp;</span><span class="editable company" [innerHtml]="experience.company"></span></h4>  
+                  <ul>
+                    <li *ngFor="let desc of experience.desc"  ><p> <span class="editable desc-{{i}}" [innerHtml]="desc"></span> </p></li>
+                  </ul>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3 editable-container education" *ngIf="ResumeJson?.education">
+          <div class="editable-item">
+            <div class="editable-toolbar" *ngIf="currentSectionEditing === 'education'">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-secondary ">
+                Add
+                </label>
+                <label (click)="deleteSection()" class="btn btn-danger">
+                  <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </label>
+              </div>
+            </div> 
+            <h4 style="color: #2e74b5; font-size: 26px" class="title editable" [innerHtml]="ResumeJson?.education.title"></h4>
+          </div>
+          <div>
+            <div class="row">
+              <div class="col-sm-6 editable-item" style="font-size:16px;" *ngFor="let education of ResumeJson?.education.education">
+              <p><span>&#9679; &nbsp;</span><span class="editable school" [innerHtml]="education.school"></span><span>&nbsp;&#9679;&nbsp;</span><span class="editable year" [innerHtml]="education.year"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="ResumeJson?.skills" class="skills editable-container text-left">
+          <div class="editable-item">
+              <h4 class="title editable" style="color: #2e74b5">{{ResumeJson?.skills.title}}</h4>
+              <div class="editable-toolbar" *ngIf="currentSectionEditing === 'skills'">
+                      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                              <label data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-secondary ">
+                              Add
+                              </label>
+                              <label (click)="deleteSection()" class="btn btn-danger">
+                                      <i class="fa fa-trash-o" aria-hidden="true"></i>
+                              </label>
+                      </div>
+              </div>
+          </div>
+          <p [attr.data-index]="i"  *ngFor="let skill of ResumeJson?.skills.skills" class="ml-4 editable editable-item skill ">&#9679;&nbsp;<span [innerHtml]="skill"></span></p>
+      </div>
+      <div  class="references editable-container" *ngIf="ResumeJson?.references" >       
+          <div class="editable-item">
+                  <div class="editable-toolbar" *ngIf="currentSectionEditing === 'references'">
+                                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                  <label data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-secondary ">
+                                                  Add 
+                                                  </label>
+                                                  <label (click)="deleteSection()" class="btn btn-danger">
+                                                          <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                  </label>
+                                                  
+                                  </div>
+                  </div> 
+                  <h4 class="editable title" style="color: #2e74b5;" [innerHtml]="ResumeJson?.references.title"></h4>
+          </div>
+          <div class="editable-item" *ngFor="let reference of ResumeJson?.references.references" >
+                  <p class="ml-3">
+                    &#9679; &nbsp;<span class="editable name" [innerHtml]="reference.name"></span> 
+                    &nbsp; &#9679; &nbsp;<span class="editable contactNumber" [innerHtml]="reference.contactNumber"></span>
+                    &nbsp; &#9679; &nbsp;<span class="editable address" [innerHtml]="reference.address"></span>
+                  </p>
+          </div>  
+          
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>

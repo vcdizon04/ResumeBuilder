@@ -1,0 +1,35 @@
+<div class="document row">
+  <div class="col p-0">
+    <div class="content-container">
+      <div class="content p-5">
+        <div class="headers clearfix">
+          <div class="float-left">
+              <h4 class="editable mb-1 name" [innerHtml]="CoverJson?.name">Jhon Doe</h4>
+              <h6 class="editable jobTitle" [innerHtml]="CoverJson?.jobTitle ? CoverJson.jobTitle :'Professional Title'">Professional Title</h6>
+              <div class="mt-4">
+                  <p class="font-italic" contenteditable="false">To</p>
+                  <h6 class="editable m-0 companyDetails" [innerHtml]="CoverJson?.companyDetails ? CoverJson.companyDetails : 'Company Details'">Company Details</h6>  
+                  <h6 class="font-italic editable date" [innerHtml]="CoverJson?.date">27 December, 2018</h6>
+              </div>
+          </div>
+          <div class="float-right">
+            <p><i class="fa fa-envelope-o mr-2"></i><span class="editable email" [innerHtml]="CoverJson?.email ? CoverJson.email : 'test@email.com'">test@email.com</span></p>
+            <p><i class="fa fa-phone mr-2"></i><span class="editable phone" [innerHtml]="CoverJson?.phone">01234567</span></p>
+          </div>
+        </div>
+        <div class="body mt-4">
+          <p class="editable">Dear Sir/Madam,</p>
+          <p class="editable mt-2 body" [innerHtml]="CoverJson?.body ? CoverJson.body : 'Lorem Ipsum is simply dummy textof the printing and typesetting industry.'">
+            
+          </p>
+
+        </div>
+        <div class="footer mt-5">
+          <p contenteditable="false">Sincerely,</p>
+          <p class="editable mt-4" [innerHtml]="CoverJson?.name">Jhon Doe</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>

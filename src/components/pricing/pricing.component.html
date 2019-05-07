@@ -1,0 +1,191 @@
+<app-navbar></app-navbar>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle"><span [hidden]="isLogin">Please Log-in</span><span *ngIf="isLogin">Choose what do you want</span></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-5">
+            <div [hidden]="isLogin">
+                <div class="form-group   text-left">
+                    <input type="email" [(ngModel)]="email" class="form-control form-control-lg" placeholder="Your Email" name="email">
+                    </div>
+                    
+                    <div class="form-group  text-left">
+                      <input type="password" [(ngModel)]="password" class="form-control m-top-1 form-control-lg" placeholder="Password" name="password">
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-primary btn-block mt-5 text-uppercase" [disabled]="!email || !password" (click)="login()">Sign In</button>
+          
+                    <p style="cursor: pointer;" class="text-center mb-1 mt-5 text-muted" data-dismiss="modal" (click)="gotoRecover()"><strong>Forgotten password?</strong></p>
+                    <p  style="cursor: pointer;" class="text-center mt-1 text-muted" data-dismiss="modal">Don't have an account? <strong (click)="gotoSignUp()"> Create an account</strong> </p>
+            </div>
+            <div *ngIf="isLogin" style="margin: 0 75px;">
+              <ngx-paypal  [config]="payPalConfig"></ngx-paypal>
+            </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+</div>
+
+<div class="container">
+  <section>
+    <div class="">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
+        <h1 class="pricing-content-sub-1">Sign up now, decide on your plan later.</h1>
+        <a href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7SQ7NZHXMURMW"><button
+            class="pricing-content-button-1">TRY FREE FOR 14 DAYS</button></a>
+        <p class="pricing-content-sub-2">* No credit card required.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center my-5">
+        <h1>Create a resume you're proud of</h1>
+        <h5>Stand out with a visual resume that highlights the key things about you and show you're relevant.</h5>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="row mt-5">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm" style="margin-top: 18px; height: 315px;">
+          <div class="card-header" style="background-color:white; border: 0px;">
+            <h4 class="my-0 font-weight-normal">Monthly</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$19<sup style="top: -1.5em !important; font-size:35%;font-weight: bolder !important;">.99/m</sup></h1>
+            <p class="plan-1" style="margin-top: 20px; font-size: 14px; margin-left: 80px;margin-right: 80px;margin-bottom: 36px;">You
+              will be billed once a month</p>
+            <!-- <a href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VUJM9FZHS8PFA"><button
+                type="button" class="btn btn-lg btn-block btn-outline-primary" style="background-color:#cef2fe !important;color: #007bff;">Buy
+                Pro Monthly</button></a> -->
+            <!-- <div id="paypal-checkout-btn2"></div> -->
+            <button data-toggle="modal" data-target="#exampleModalCenter" (click)="choosePlan(19.99,30)"
+                type="button" class="btn btn-lg btn-block btn-outline-primary" style="background-color:#cef2fe !important;color: #007bff;">Buy
+                Pro Monthly</button>
+            <p style="font-size: 15px; margin-top: 15px">UPGRADE ANYTIME</p>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm" id="middleCard">
+          <div class="card-header" style="background-color: #fdf1e5;">
+            <h4 class="my-0 font-weight-normal" style="color: #fa712a; font-size: 15px; font-weight: bolder !important;">MOST
+              POPULAR</h4>
+          </div>
+          <div class="card-header" style="background-color: white; border: 0px;">
+            <h4 class="my-0 font-weight-normal">Quarterly</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$14<sup style="top: -1.5em !important; font-size:35%;font-weight: bolder !important;">.99/m</sup></h1>
+            <p class="plan-2" style="margin-top: 20px; font-size: 14px; margin-left: 80px;margin-right: 80px;"><s style="color: gray;">$59.97</s>&nbsp;$44.97
+              billed every 3 months</p>
+            <!-- <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MJUSAFQCA8ZKU"><button type="button" class="btn btn-lg btn-block btn-primary">Buy Pro Quarterly</button></a>  -->
+            <!-- <a href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DJNKT3FDZBJ7W"><button
+                type="button" class="btn btn-lg btn-block btn-primary">Buy Pro Quarterly</button></a> -->
+            <!-- <div id="paypal-checkout-btn"></div> -->
+            <button data-toggle="modal" data-target="#exampleModalCenter" (click)="choosePlan(14.99, 90)"
+                type="button" class="btn btn-lg btn-block btn-primary">Buy Pro Quarterly</button>
+            <p style="font-size: 15px; margin-top: 15px">SAVE <span style="color:orange">25%</span></p>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm" style="margin-top: 18px; height: 315px;">
+          <div class="card-header" style="background-color:white; border: 0px;">
+            <h4 class="my-0 font-weight-normal">Semi Annual</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$10<sup style="top: -1.5em !important; font-size:35%;font-weight: bolder !important;">.99/m</sup></h1>
+            <p class="plan-3" style="margin-top: 20px; font-size: 14px; margin-left: 80px;margin-right: 80px;"><s style="color: gray;">$119.94</s>&nbsp;$65.94
+              billed every 6 months</p>
+            <!-- <a href="https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J8VV6UY2DMR6C"><button
+                type="button" class="btn btn-lg btn-block btn-primary" style="background-color:#cef2fe !important;color: #007bff;">Buy
+                Pro Semi-Annual</button></a> -->
+            <!-- <div id="paypal-checkout-btn3"></div> -->
+            <button data-toggle="modal" data-target="#exampleModalCenter" (click)="choosePlan(10.99, 180)"
+                type="button" class="btn btn-lg btn-block btn-primary" style="background-color:#cef2fe !important;color: #007bff;">Buy
+                Pro Semi-Annual</button>
+            <p style="font-size: 15px; margin-top: 15px">SAVE <span style="color:orange">45%</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="col-lg-12 col-md-12 col-sm-12 text-center my-5">
+      <h1>What's included in pro</h1>
+      <div class="container" style="margin-top: 50px;">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="float-left" src="../assets/images/1-01.png" height="50" width="50">
+            <div class="content pl-5 ml-5">
+              <p class="text-left" style="font-size: 20px; font-weight: 600;">Up to 10 resumes</p>
+              <p class="text-left" style="font-size: 14px;">Make changes to your resume and tailor to a specific
+                position in a matter of minutes.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="float-left" src="../assets/images/2-01.png" height="50" width="50">
+            <div class="content pl-5 ml-5">
+              <p class="text-left" style="font-size: 20px; font-weight: 600;">Unlimited entries</p>
+              <p class="text-left" style="font-size: 14px;">Add more of your personal and professional experience to
+                prove your culture fit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img class="float-left" src="../assets/images/3-01.png" height="50" width="50">
+            <div class="content pl-5 ml-5">
+              <p class="text-left" style="font-size: 20px; font-weight: 600;">Pro sections</p>
+              <p class="text-left" style="font-size: 14px;">Show certificates, awards, references, and more, so that
+                your achievements come across.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="float-left" src="../assets/images/4-01.png" height="50" width="50">
+            <div class="content pl-5 ml-5">
+              <p class="text-left" style="font-size: 20px; font-weight: 600;">Pro sections</p>
+              <p class="text-left" style="font-size: 14px;">Customize colors, fonts, and icons and make sure your
+                resume is never bland.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img class="float-left" src="../assets/images/5-01.png" height="50" width="50">
+            <div class="content pl-5 ml-5">
+              <p class="text-left" style="font-size: 20px; font-weight: 600;">Remove branding</p>
+              <p class="text-left" style="font-size: 14px;">Get the full credit for your resume by removing the Enhancv
+                logo on the page.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="float-left" src="../assets/images/6-01.png" height="50" width="50">
+            <div class="content pl-5 ml-5">
+              <p class="text-left" style="font-size: 20px; font-weight: 600;">Contact template</p>
+              <p class="text-left" style="font-size: 14px;">Use a visually appealing layout that fits more information
+                in one page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="row-full">
+    <div class="py-5">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+        <h1 class="pricing-content-sub-1 text-light">Not happy with your current resume?</h1>
+        <button class="pricing-content-button-4">TRY FREE FOR 14 DAYS</button>
+      </div>
+    </div>
+  </section>
+
+
+</div>

@@ -1,0 +1,189 @@
+.success-resume-header-1 {
+    margin: 30px;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.success-resume-sub-1 {
+    margin: 30px;
+    font-size: 25px;
+}
+
+.success-resume-sub-2 {
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.success-resume-sub-3 {
+    margin-top: 40px;
+    font-size: 25px;
+    color: #0173BC;
+    font-weight: 600;
+}
+
+.success-resume-image-1{
+    width: 90%;
+}
+.success-resume-image-2{
+    width: 20%;
+}
+
+.success-resume-item-1 {
+    display: inline-block;
+    color: black;
+    padding: 8px;
+}
+
+.success-resume-layout-1 {
+    text-align: center;
+    padding: 15px 0px;
+    border-top: 5px #0173BC solid;
+    margin-bottom: 20%;
+    box-shadow: 5px 10px 15px #888888;
+}
+
+.success-resume-image-3{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.success-resume-header-3{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+    margin-bottom: -20px;
+}
+
+.success-resume-span-1 {
+    font-size: 20px;
+}
+
+.success-resume-sub-4 {
+    padding: 30px 0px;
+}
+
+.success-resume-image-4 {
+    width: 30%;
+}
+
+.success-resume-sub-5 {
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.success-resume-header-4{
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: -10px;
+}
+.success-resume-sub-6{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.success-resume-header-5 {
+    font-size: 50px;
+    margin-top: 15%;
+    color: #5D5D5D;
+    font-weight: 600;
+}
+.success-resume-sub-7 {
+    margin-top: 40px;
+    font-size: 25px;
+}
+.success-resume-button-1 {
+    background: #0072BB;
+    border: 1px #0072BB solid;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.success-resume-sub-8 {
+    margin-top: 15%;
+    font-size: 25px;
+    font-weight: 600;
+}
+.success-resume-image-5{
+    width: 70%;
+    margin-top: 10%;
+}
+
+.success-resume-layout-2 {
+    text-align: center;
+    padding: 15px 0px;
+    border-top: 5px #0173BC solid;
+    margin-bottom: 20%;
+    box-shadow: 5px 10px 15px #888888;
+}
+.success-resume-image-3 {
+    width: 50%;
+    border-radius: 50%;
+}
+.success-resume-header-6 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 0px;
+    margin-bottom: -20px;
+}
+.success-resume-sub-9 {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.success-resume-header-7 {
+        font-size: 50px;
+    font-weight: 600;
+    color: #5D5D5D;
+    margin-top: 15%;
+}
+.success-resume-sub-10 {
+    margin-top: 40px;
+    font-size: 25px;
+}
+.success-resume-input-1 {
+    border: 1px #0072BB solid;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 65%;
+    margin-bottom: 5%;
+}
+.success-resume-button-2 {
+    background: #0072BB;
+    border: 1px #0072BB solid;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 30%;
+}
+
+@media only screen and (min-width: 320px) {
+    .success-resume-input-1 {
+        width: 98% !important;
+    }
+
+    .success-resume-button-2 {
+        width: 40% !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .success-resume-input-1 {
+        width: 65% !important;
+    }
+
+    .success-resume-button-2 {
+        width: 30% !important;
+    }
+
+}

@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5 {
+    margin-top: 0px;
+    font-family: serif;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+body p {
+    font-size: 13px;
+    line-height: 1.3;
+    margin-bottom: 5px;
+}
+ul, li {
+    font-size: 13px;
+}
+.resume-container {
+    width: 103.7%;
+    /* max-width: 210mm; */
+    margin: 0 auto;
+    padding: 0;
+    height: 297mm;
+    left: -15px;
+    // border: 2px solid #CDCDCD;
+}
+.top-container {
+    background-color: #3497DB;
+    padding: 40px 0;
+    color: #fff;
+}
+.profile-image {
+    width: 40%;
+    display: block;
+    float: left;
+}
+.name-container {
+    width: 60%;
+    display: block;
+    float: left;
+}
+.name-text {
+    font-family: serif;
+}
+.position {
+    font-size: 24px;
+    font-style: italic;
+    font-family: monospace;
+}
+ul.contact-info {
+    padding: 0;
+    list-style: none;
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -ms-column-count: 2;
+    -o-column-count: 2;
+}
+.body-content {
+    padding: 60px 40px 0px;
+}
+.about-me-container {
+    padding: 20px;
+    background-color: #EFF5F6;
+}
+.about-me-desc {
+    font-style: italic;
+    font-size: 12px;
+}
+.column-title-container h3, .info-title, .about-me-title, .column-title-container h4 {
+    color: #3497DB;
+    font-weight: 600;
+}
+.left-container .info-container.with-left-line {
+    padding: 10px 0 10px 70px;
+}
+.info-title {
+    margin-bottom: 0;
+    line-height: 1;
+}
+.info-company-years {
+    font-style: italic;
+    font-size: 12px;
+}
+.info-desc {
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.left-container .clock-container {
+    position: absolute;
+    left: 13px;
+    background: #3497DB;
+    color: #fff;
+    top: 55%;
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    line-height: 22px;
+    transform-origin: top;
+    transform: rotate(-45deg) translateY(50%);
+    font-size: 11px;
+}
+.left-container .info-container.with-left-line:before {
+    content: '';
+    width: 1px;
+    border-right: 1px solid #CDCDCD;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 37px;
+}
+.column-title-container {
+    margin-top: 40px;
+}
+.info-container .list-items li {
+    list-style-position: inside;
+    font-size: 16px;
+}
+.right-container {
+    padding-left: 30px;
+}
+.right-container .info-title, .right-container .info-company-years {
+    font-size: 10px;
+}
+.right-container .info-container {
+    padding: 10px 0;
+}
+.diamond-container {
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -20px;    
+    transform-origin: 0 0;
+    top: 45%;
+    background-color: #3497DB;
+    transform: rotate(-45deg) translateY(-50%);
+}
+.column-container.with-line:before {
+    content: '';
+    position: absolute;
+    left: -18px;
+    top: 0;
+    width: 1px;
+    border-right: 1px solid #3999DC;
+    height: 100%;
+}
+.diamond-container.top {
+    top: 5px;
+}
+.column-icon-container {
+    position: absolute;
+    top: -8px;
+    left: -32px;
+    width: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #3497DB;
+    background: #fff;
+}
+.column-container {
+    margin-bottom: 20px;
+}
+.info-items .item {
+    list-style-position: inside;
+}

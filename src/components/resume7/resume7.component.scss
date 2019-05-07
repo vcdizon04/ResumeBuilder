@@ -1,0 +1,150 @@
+.preview{
+    margin: 3rem 11rem;
+}
+.document{
+    border: 1px solid #b4b4b4;
+    .content{
+        min-height: 1300px;
+    }
+    .editable-container {
+        -webkit-transition:background 1s;
+        -moz-transition:background 1s;
+        -o-transition:background 1s;
+        transition:background 1s;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        padding: 1rem;
+        .editable:focus{
+            outline: 0px solid transparent;
+        }
+    }
+    .editable-container.active{
+        background-color: #fff;
+    }
+
+    .editable-container:hover{
+        border: 1px solid #17a2b8;
+        border-radius: 5px;
+    }
+    
+    
+}
+
+body{
+	background: gray !important;
+}
+.left-txt h3 {
+color:#866c87;
+}
+
+.topall {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.container {
+    margin-bottom: 40px;
+}
+.col-sm-9.left-txt.topall {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.1em;
+    margin: 0px;
+}
+.col-sm-3.topall p {
+    padding-left: 15%;
+    line-height: 1.2em;
+    margin: 0px;
+}
+
+.dash{
+    border: 0 none;
+    border-top: 2px dotted;
+    background: none;
+    height:0;
+  } 
+
+.col-parent-left{
+    position: relative;
+    width: 350px;
+}
+
+.col-child-left{
+    position: absolute;
+    left: -10px;
+}
+
+.icons{
+    float: left;
+    width: 85%;
+}
+
+@media (max-width: 1091px) and (min-width: 845px) {
+    .col-parent-left{
+        width: 40% !important;
+    }
+}
+
+@media (max-width: 844px){
+    .col-parent-left{
+        width: 40% !important;
+    }
+    .icons{
+        width: 55% !important;
+        margin-left: -25px;
+    }
+}
+
+
+
+.col-image-layout-2 {
+    background: #CBCBCB;
+    padding: 5px;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    margin: 0 auto;
+}
+
+.col-image-layout-3 {
+    background: #FFFFFF;
+    padding: 5px;
+    border-radius: 50%;
+    height: 120px;
+}
+
+.col-image-layout-4 {
+    background: #595959;
+    // padding: 72px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+
+h6 {
+    font-size: 13px;
+}
+
+li {
+    font-size: 13px;
+}
+
+// .qwe {
+//     -webkit-transform: rotate(-90deg);
+//     -moz-transform: rotate(-90deg);
+//     -o-transform: rotate(-90deg);
+//     -ms-transform: rotate(-90deg);
+//     transform: rotate(-90deg);
+// }

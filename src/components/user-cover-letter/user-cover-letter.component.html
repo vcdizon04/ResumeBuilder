@@ -1,0 +1,23 @@
+<ng-container *ngIf="templatePreviewImage; else elseTemplate">
+  <div class="row">
+      <div class="col-md-6 p-3">
+          <div class="hover-effect m-5">
+              <img class="img-thumbnail" [src]="templatePreviewImage" alt="">
+              <div class="overlay">
+                <div class="text-center action">
+                  <!-- <h4 class="text-white mb-3">Blueprint</h4> -->
+                  <button class="btn btn-info btn-lg" (click)="gotoCoverLetter()">Continue Editing</button>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</ng-container>
+<ng-template #elseTemplate>
+  <div class="row p-3" style="min-height: 80vh;">
+      <div class="col text-center m-5">
+          <p class="lead"> It's looks like you don't have a cover letter yet.</p>
+          <button (click)="gotoCoverLetter()" class="btn btn-primary btn-lg">Start Now</button>
+      </div>
+  </div>
+</ng-template>

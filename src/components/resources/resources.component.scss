@@ -1,0 +1,118 @@
+.resources-img-w6 {
+    width: 60%;
+}
+
+.resources-img-w9 {
+    width: 90%;
+}
+
+.resources-content-header-1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #5D5D5D;
+}
+
+.resources-content-header-2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    // padding-top: 80px;
+    margin-bottom: -10px;
+}
+
+.resources-content-input-1 {
+    border: 1px #0072BB solid;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 55%;
+    margin-bottom: 5%;
+}
+
+.resources-content-button-2 {
+    background: #0072BB;
+    border: 1px #0072BB solid;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 25%;
+}
+
+.resources-content-sub-1 {
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.resources-content-sub-2 {
+    margin-top: 80px;
+    font-size: 25px;
+}
+
+.resources-content-sub-3 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.btn {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    border-radius: 0px;
+    letter-spacing: 2px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    text-shadow: none !important;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (min-width: 320px) {
+    .input-email{
+        width: 90% !important;
+    }
+    .input-btn{
+        width: 50% !important;
+    }
+    .img-people {
+        width: 90% !important;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .input-email{
+        width: 60% !important;
+    }
+    .input-btn{
+        width: 35% !important;
+    }
+    .img-people {
+        width: 60% !important;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .input-email{
+        width: 55% !important;
+    }
+    .input-btn{
+        width: 25% !important;
+    }
+    .img-people {
+        width: 60% !important;
+    }
+
+}

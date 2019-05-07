@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light px-5 sticky" data-toggle="affix">
+    <a routerLink="/home" routerLinkActive="active" class="navbar-brand">
+      <img src="assets/images/resume builder-01.png" alt="" >
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item  px-2">
+              <a  routerLink="/successful-resumes" routerLinkActive="active" class="nav-link" href="#">Successful Resumes </a>
+            </li>
+            <li class="nav-item px-2">
+              <a  routerLink="/resources" routerLinkActive="active" class="nav-link" href="#">Resources</a>
+            </li>
+            <li class="nav-item px-2">
+              <a routerLink="/pricing" routerLinkActive="active"  class="nav-link" href="#">Pricing</a>
+            </li>
+            <li [hidden]="isLoggedIn" class="nav-item px-2">
+              <a routerLink="/login" routerLinkActive="active" class="nav-link" href="#">Sign In</a>
+            </li>
+            <li *ngIf="isLoggedIn" class="nav-item px-2">
+                <a routerLink="/dashboard" routerLinkActive="active" class="nav-link" href="#">Dashboard</a>
+              </li>
+            <li   [hidden]="isLoggedIn" class="nav-item px-2" >
+                <button  routerLink="/templates" routerLinkActive="active" class="btn-info btn btn-lg px-4">Get Started</button>
+            </li>
+           
+          </ul>
+    </div>
+  </nav>

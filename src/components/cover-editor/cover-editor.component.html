@@ -1,0 +1,83 @@
+<app-navbar2></app-navbar2>
+<div class="modal fade" id="modalEmail" tabindex="-1" role="dialog" aria-labelledby="modalEmailTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalEmailTitle">Enter Email</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input  [(ngModel)]="email"  type="text" class="form-control" placeholder="Email Address" >
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="sendResumeByEmail()">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container-fluid">
+    <div class="row cover-editor">
+      <div class="col-lg-2 sidebar">
+        <div class="row" *ngIf="isSidebarAction === 'main'">
+          <div class="col-12 py-3 pl-2rem pr-3rem bottom-border">
+               <button type="button" (click)="download()" class="btn btn-info btn-block btn-add-section" data-toggle="modal" data-target="#exampleModalCenter">
+                  <i class="fa fa-download pr-3"></i>
+                  <span class="spn-txt">Download</span> 
+                </button>
+          </div>
+    
+          <div class="col-12  py-3 px-5 border-bottom">
+              <a class="sidebar-btn" data-toggle="modal" data-target="#modalEmail">
+                <i class="fa fa-envelope pr-3"></i>
+                <span class="spn-txt">Send to Email</span> 
+              </a>
+        </div>
+          <div class="col-12  py-3 px-5 border-bottom">
+              <!-- <button (click)="save()" type="button" class="btn  btn-info btn-block" > -->
+                <a class="sidebar-btn " (click)="save()">
+                  <i class="fa fa-save pr-3"></i>
+                  <span class="spn-txt">Save</span> 
+                </a>
+          </div>
+        </div>
+        <div *ngIf="isSidebarAction === 'chooseTemplate'" class="row">
+            <div class="col-12 py-3 px-2 border-bottom">
+                  <button (click)="gotoMainSideBar()" type="button" class="btn btn-info btn-block btn-add-section">
+                    <i class="fa fa-arrow-left pr-3"></i>
+                    <span class="spn-txt">Back to Navigation</span> 
+                  </button>
+            </div>
+            <div class="col-12 py-3 px-4">
+              <div class="mb-3 templates" (click)="selectTemplate('resume1')">
+                  <img src="assets/images/Resume Templates/8.jpg" style="width:100%;" alt="">
+              </div>
+              <div class="mb-3 templates" (click)="selectTemplate('resume2')">
+                  <img src="assets/images/Resume Templates/9.jpg" style="width:100%;" alt="">
+              </div>
+              <div class="mb-3 templates" (click)="selectTemplate('resume4')">
+                  <img src="assets/images/Resume Templates/16.jpg" style="width:100%;" alt="">
+              </div>
+            </div>
+        </div>
+      </div>
+    
+      <div class="col-lg-10 m-0 p-0">
+        <div class="preview mt-0 mb-5">
+            <div class="my-3 row justify-content-left">
+              <div class="col p-0">
+                  <button (click)="undo()" class="btn btn-light btn-square animated-hover mr-3"><i class="fa fa-undo text-primary"></i></button>
+                  <button (click)="redo()" class="btn btn-light btn-square animated-hover"><i class="fa fa-repeat text-primary"></i></button>
+              </div>
+            </div>
+            <div class="row" >
+              <div class="col p-0">
+                  <router-outlet></router-outlet>
+              </div>
+            </div>
+       
+        </div>
+      </div>
+    </div>
+</div>

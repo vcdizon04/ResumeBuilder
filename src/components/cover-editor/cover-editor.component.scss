@@ -1,0 +1,89 @@
+.cover-editor ::ng-deep{
+    a {
+        cursor: pointer;
+    }
+    background-color: #f3f3f3;
+    .medium-editor-element {
+        min-height: auto !important;
+        p {
+            display: inline;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .preview{
+        margin: 3rem 11rem; 
+        .document {
+            p {
+                font-size: 12px;
+                margin-bottom: .2rem;    
+            }
+            border: 1px solid #b4b4b4;
+            background-color: #fff;
+            .content-container{
+            height: 279mm;
+            max-height: 279mm;
+                // height: 279mm;
+            // max-height: 279mm;
+            * {
+                max-height: 100%;
+            }
+            .content{
+                // max-height: 279mm;
+                -webkit-transition:background 1s;
+                -moz-transition:background 1s;
+                -o-transition:background 1s;
+                transition:background 1s;
+                // overflow: hidden;
+            }
+           }
+          
+            .basic{
+                img{
+                    cursor: pointer;
+                }
+                img:hover{
+                    opacity: 0.8;
+                }
+            }
+        
+            
+        }
+      
+        .editable-container {
+            @keyframes showNav {
+                from {opacity: 0;}
+                to {opacity: 1;}
+              }
+            -webkit-transition:background 1s;
+            -moz-transition:background 1s;
+            -o-transition:background 1s;
+            transition:background 1s;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            padding: 1rem;
+            position: relative;
+          
+            .editable-toolbar{
+                position: absolute;
+                left: 39%;
+                top: -18px;
+                // display: none;
+                // transition: opacity 1s ease-out;
+                // opacity: 0;
+            }
+        }
+        .editable-container.active{
+            background-color: #fff;
+            
+        }
+        .editable-container:hover{
+            border: 1px solid #17a2b8;
+            border-radius: 5px;
+        }
+        .editable:focus{
+            outline: 0px solid transparent;
+        }
+    }
+    
+}
